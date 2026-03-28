@@ -1,12 +1,10 @@
 #+title: Intentional Versioning 1.0
-#+subtitle: intver.org
+#+subtitle: intver.org — [[https://creativecommons.org/publicdomain/zero/1.0/][CC0 1.0]] — [[https://bzg.fr][bzg]]
 
-* In a nutshell
+* Releases are messages for an audience
 
 Intentional Versioning uses version numbers to tell *who* should care
-about a release, not what changed in the code.
-
-A version number =x.y.z= addresses three audiences:
+about a release.  A version number =x.y.z= addresses three audiences:
 
 #+attr_html: :style text-align:center
 [[file:intver.svg]]
@@ -30,15 +28,14 @@ A version number =x.y.z= addresses three audiences:
    not imply a level of severity. The details belong in the changelog.
 4. A release can address multiple audiences. When it does, increment
    the leftmost relevant component.
-5. Start at =0.0.1=.
 
-* Customizing audiences
+* Being explicit about your audiences
 
-The three default audiences --- users, integrators, maintainers ---
-fit most projects. If yours doesn't have distinct integrators, =y=
-simply won't change much. That's fine.
+The three default audiences – users, integrators, maintainers – fit
+most projects. If yours doesn't have distinct integrators, it won't
+change much. That's fine. 
 
-If you want to be more specific, define your audiences in your README:
+If you want to be more explicit, define your audiences in your README:
 
 #+begin_example
 This project uses Intentional Versioning (intver.org).
@@ -55,11 +52,14 @@ Badges:
 
 * Breaking changes
 
-Version numbers say who should pay attention. To say what /breaks/, use
-git trailers in your commit messages:
+Version numbers say who should pay attention. 
+
+To say what /breaks/, you can use the git trailing =BREAKING-CHANGE:=, as
+recommended in conventional commits. Or you can use more specific git
+trailers:
 
 #+begin_example
-feat: redesign the dashboard
+feat: Redesign the dashboard
 
 New layout with improved accessibility.
 
@@ -73,8 +73,7 @@ Three trailers are available, one per audience:
 - =Breaks-Integrators:=
 - =Breaks-Maintainers:=
 
-No such trailer means nothing breaks. The value after the colon should
-be a short, human-readable explanation.
+The absence of a trailer means that nothing breaks.
 
 * FAQ
 
