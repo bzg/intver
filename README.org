@@ -1,0 +1,25 @@
+#+title: intver.org
+
+This repository contains the website for [[https://intver.org][Intentional Versioning (IntVer)]].
+
+* Badges
+
+Projects using IntVer can add these badges to their README:
+
+General badge:
+
+#+begin_example
+![IntVer](https://img.shields.io/badge/versioning-intver.org-blue)
+#+end_example
+
+Per-audience badges (adjust version numbers to match your project):
+
+#+begin_example
+![Users 2.x](https://img.shields.io/badge/users-2.x-e63946)
+![Integrators 2.3.x](https://img.shields.io/badge/integrators-2.3.x-457b9d)
+![Maintainers 2.3.1](https://img.shields.io/badge/maintainers-2.3.1-2a9d8f)
+#+end_example
+
+* License
+
+[[https://creativecommons.org/publicdomain/zero/1.0/][CC0 1.0 Universal]]
