@@ -1,5 +1,7 @@
 #+title: intver.org
 
+[[https://img.shields.io/badge/intver-1.0.0-blue]]
+
 This repository contains the website for [[https://intver.org][Intentional Versioning (IntVer)]].
 
 * Badges
