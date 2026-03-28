@@ -1,7 +1,7 @@
 #+title: Intentional Versioning 1.0
 #+subtitle: IntVer ([[https://codeberg.org/bzg/intver][repo]]) — [[https://creativecommons.org/publicdomain/zero/1.0/][CC0 1.0]] — [[https://bzg.fr][bzg]]
 
-* Releases are messages for an audience
+* A release is a message
 
 /Intentional Versioning/ uses version numbers to tell *who* should care
 about a release.
@@ -31,7 +31,7 @@ A version number =x.y.z= addresses three audiences:
 4. A release can address multiple audiences. When it does, increment
    the leftmost relevant component.
 
-* Being explicit about your audiences
+* Describe your audiences
 
 The three default audiences – users, integrators, maintainers – fit
 most projects. If yours doesn't have distinct integrators, it won't
