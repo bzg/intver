@@ -3,8 +3,10 @@
 
 * Releases are messages for an audience
 
-Intentional Versioning uses version numbers to tell *who* should care
-about a release.  A version number =x.y.z= addresses three audiences:
+/Intentional Versioning/ uses version numbers to tell *who* should care
+about a release.
+
+A version number =x.y.z= addresses three audiences:
 
 #+attr_html: :style text-align:center
 [[file:intver.svg]]
