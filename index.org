@@ -46,10 +46,10 @@ This project uses Intentional Versioning (intver.org).
 - z: core contributors (maintainers)
 
 Badges:
-![IntVer](https://img.shields.io/badge/versioning-intver.org-blue)
-![Users 2.x](https://img.shields.io/badge/users-2.x-e63946)
-![Integrators 2.3.x](https://img.shields.io/badge/integrators-2.3.x-457b9d)
-![Maintainers 2.3.1](https://img.shields.io/badge/maintainers-2.3.1-2a9d8f)
+![IntVer](https://img.shields.io/badge/versioning-intver.org-blue.svg)
+![Users 2.x](https://img.shields.io/badge/users-2.x-e63946.svg)
+![Integrators 2.3.x](https://img.shields.io/badge/integrators-2.3.x-457b9d.svg)
+![Maintainers 2.3.1](https://img.shields.io/badge/maintainers-2.3.1-2a9d8f.svg)
 #+end_example
 
 * Breaking changes
@@ -106,8 +106,3 @@ The absence of a trailer means that nothing breaks.
 - *Is IntVer compatible with tools that expect semver?* :: The format
   =x.y.z= is identical, so most tools will accept IntVer version
   strings. The /meaning/ is different, but the structure is the same.
-
-- *How do I add an IntVer badge to my README?* :: In a =README.md=:
-  =![IntVer](https://img.shields.io/badge/versioning-intver.org-blue.svg)=.
-  In a =README.org=:
-  =[[https://img.shields.io/badge/versioning-intver.org-blue.svg]]=
