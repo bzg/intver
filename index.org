@@ -1,22 +1,20 @@
 #+title: Intentional Versioning 1.0
-#+subtitle: IntVer ([[https://codeberg.org/bzg/intver][repo]]) — [[https://creativecommons.org/publicdomain/zero/1.0/][CC0 1.0]] — [[https://bzg.fr][bzg]]
+#+subtitle: IntVer ([[https://codeberg.org/bzg/intver][repo]]) — [[https://bzg.fr][bzg]] — [[https://creativecommons.org/publicdomain/zero/1.0/][CC0 1.0]]
 
 #+attr_html: :style text-align:center
 [[file:intver.svg]]
 
 * A release is a message
 
-/Intentional Versioning/ uses version numbers to tell *who* should care
-about a release.
+Intentional Versioning uses versions to tell *who* should care about a
+release. Version =x.y.z= addresses three audiences:
 
-A version number =x.y.z= addresses three audiences:
-
-- =x= --- *Users* :: The people who use the software. Incrementing =x= says:
+- =x= — *Users* :: The people who use the software. Incrementing =x= says:
   /"Users, this release is for you."/
-- =y= --- *Integrators* :: The people who build on top of the software:
-  API consumers, plugin authors, packagers. Incrementing =y= says:
+- =y= — *Integrators* :: The people who build on top of the software: API
+  consumers, plugin authors, packagers. Incrementing =y= says:
   /"Integrators, this release is for you."/
-- =z= --- *Maintainers* :: The people who work on the software itself.
+- =z= — *Maintainers* :: The people who work on the software itself.
   Incrementing =z= says: /"Maintainers, this release is for you."/
 
 * Rules
@@ -31,11 +29,11 @@ A version number =x.y.z= addresses three audiences:
 4. A release can address multiple audiences. When it does, increment
    the leftmost relevant component.
 
-* Describe your audiences
+* Audiences
 
 The three default audiences – users, integrators, maintainers – fit
 most projects. If yours doesn't have distinct integrators, it won't
-change much. That's fine. 
+change much. That's fine.
 
 If you want to be more explicit, define your audiences in your README:
 
@@ -54,7 +52,7 @@ Badges:
 
 * Breaking changes
 
-Version numbers say who should pay attention. 
+Version numbers say who should pay attention.
 
 To say what /breaks/, you can use the git trailing =BREAKING-CHANGE:=, as
 recommended in conventional commits. Or you can use more specific git
