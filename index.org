@@ -1,5 +1,5 @@
 #+title: Intentional Versioning 1.0
-#+subtitle: intver.org — [[https://creativecommons.org/publicdomain/zero/1.0/][CC0 1.0]] — [[https://bzg.fr][bzg]]
+#+subtitle: IntVer ([[https://codeberg.org/bzg/intver][repo]]) — [[https://creativecommons.org/publicdomain/zero/1.0/][CC0 1.0]] — [[https://bzg.fr][bzg]]
 
 * Releases are messages for an audience
 
@@ -106,3 +106,8 @@ The absence of a trailer means that nothing breaks.
 - *Is IntVer compatible with tools that expect semver?* :: The format
   =x.y.z= is identical, so most tools will accept IntVer version
   strings. The /meaning/ is different, but the structure is the same.
+
+- *How do I add an IntVer badge to my README?* :: In a =README.md=:
+  =![IntVer](https://img.shields.io/badge/versioning-intver.org-blue.svg)=.
+  In a =README.org=:
+  =[[https://img.shields.io/badge/versioning-intver.org-blue.svg]]=
