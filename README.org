@@ -1,4 +1,6 @@
-[[https://intver.org][https://img.shields.io/badge/intver-1.0.0-blue?style=for-the-badge]]
+#+title: Intentional Versioning
+
+[[https://intver.org][https://img.shields.io/badge/intver-1.0.0-blue.svg?style=for-the-badge]]
 
 This repository contains the website for [[https://intver.org][Intentional Versioning (IntVer)]].
 
