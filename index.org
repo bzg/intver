@@ -21,33 +21,30 @@ release. Version =x.y.z= addresses three audiences:
 
 1. A version has the form =x.y.z= where =x=, =y= and =z= are non-negative
    integers.
-2. Increment the component that matches the audience you are
-   addressing with this release. Reset the components to its right to
-   zero.
-3. An increment means /"this release deserves your attention"/. It does
-   not imply a level of severity. The details belong in the changelog.
-4. A release can address multiple audiences. When it does, increment
-   the leftmost relevant component.
+2. An increment means "this release deserves your attention", with
+   "your" referring to =users/integrators/maintainers=, or
+   =integrators/maintainers= or just =maintainers=.
 
 * Audiences
 
-The three default audiences – users, integrators, maintainers – fit
-most projects. If yours doesn't have distinct integrators, it won't
-change much. That's fine.
+The default audiences – users, integrators, maintainers – fit most
+projects. If yours doesn't have distinct integrators, the =y= won't
+change much, and that's fine.
 
-If you want to be more explicit, define your audiences in your README:
+If you want to be explicit, define your audiences in your =README=:
 
 #+begin_example
-This project uses Intentional Versioning (intver.org).
+This project uses Intentional Versioning (intver.org):
+
 - x: teachers and students (users)
 - y: LMS plugin developers (integrators)
 - z: core contributors (maintainers)
 
-Badges:
-![IntVer](https://img.shields.io/badge/versioning-intver.org-blue.svg)
-![Users 2.x](https://img.shields.io/badge/users-2.x-e63946.svg)
-![Integrators 2.3.x](https://img.shields.io/badge/integrators-2.3.x-457b9d.svg)
-![Maintainers 2.3.1](https://img.shields.io/badge/maintainers-2.3.1-2a9d8f.svg)
+Badge for README.md:
+[![versioning: intver.org](https://img.shields.io/badge/versioning-intver.org-blue.svg)](https://intver.org)
+
+Badge for README.org:
+[[https://intver.org][https://img.shields.io/badge/versioning-intver.org-blue.svg]]
 #+end_example
 
 * Breaking changes
@@ -96,6 +93,11 @@ The absence of a trailer means that nothing breaks.
   rarely increment =y=. The scheme still works --- it just reflects the
   reality that this project doesn't have a distinct integrator
   audience.
+
+- What if a change is for users and integrators :: Then update the '=x='
+  part. Implicitly, changes for users deserve the attention of
+  integrators and maintainers, and changes for integrators deserve the
+  attention of maintainers.
 
 - *Can I use pre-release or build metadata (e.g. =1.2.3-beta=)?* :: IntVer
   does not specify pre-release or build metadata conventions. You are
