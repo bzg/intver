@@ -94,8 +94,8 @@ The absence of a trailer means that nothing breaks.
   reality that this project doesn't have a distinct integrator
   audience.
 
-- What if a change is for users and integrators :: Then update the '=x='
-  part. Implicitly, changes for users deserve the attention of
+- *What if a change is for users and integrators?* :: Then update the
+  '=x=' part. Implicitly, changes for users deserve the attention of
   integrators and maintainers, and changes for integrators deserve the
   attention of maintainers.
 
