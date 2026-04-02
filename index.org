@@ -56,12 +56,12 @@ recommended in conventional commits. Or you can use more specific git
 trailers:
 
 #+begin_example
-feat: Redesign the dashboard
+feat!: Redesign the dashboard
 
 New layout with improved accessibility.
 
-Breaks-Users: the settings page has moved to the profile menu
-Breaks-Integrators: DashboardConfig.load() now returns a Result type
+Breaks-Users: The settings page has moved to the profile menu.
+Breaks-Integrators: DashboardConfig.load() now returns a Result type.
 #+end_example
 
 Three trailers are available, one per audience:
@@ -74,30 +74,28 @@ The absence of a trailer means that nothing breaks.
 
 * FAQ
 
-- *How is this different from Semantic Versioning?* :: Semver encodes
-  /what changed/ (patch, feature, breaking change). IntVer encodes /who
-  should care/. Semver tries to describe the code and signal its
-  audiences at the same time, which creates tension: a bugfix can be
-  breaking for some users, and a major API change can be irrelevant to
-  most. IntVer separates these concerns --- the version number
-  addresses audiences, git trailers describe what breaks.
+- *How is this different from Semantic Versioning?* :: SemVer encodes
+  /what changed/, also trying to encode the importance (major/minor).
+  IntVer encodes /who should care/. Semver tries to describe the code
+  and signal its audiences at the same time, which creates tension: a
+  bugfix can be breaking for some users and a major API change can be
+  irrelevant to most. IntVer separates these concerns: the version
+  number addresses audiences, git trailers describe what breaks.
 
 - *Does incrementing =x= mean a breaking change?* :: No. It means users
-  should pay attention to this release. It might be a major new
-  feature, a redesign, or a breaking change. The nature of the change
-  belongs in the changelog and in git trailers, not in the version
-  number.
+  should pay attention to this release. It might be a new feature, a
+  redesign or a breaking change. The nature of the change belongs in
+  the changelog and in git trailers, not in the version number.
 
 - *What if my project only has two audiences?* :: Then one of the three
   components won't change often. A CLI tool with no plugin system will
-  rarely increment =y=. The scheme still works --- it just reflects the
-  reality that this project doesn't have a distinct integrator
-  audience.
+  rarely increment =y=. The scheme still works, it reflects the reality
+  that this project doesn't have a distinct integrator audience.
 
 - *What if a change is for users and integrators?* :: Then update the
-  '=x=' part. Implicitly, changes for users deserve the attention of
-  integrators and maintainers, and changes for integrators deserve the
-  attention of maintainers.
+  '=x=' part. Implicitly, changes for users also deserve the attention
+  of integrators and maintainers, and changes for integrators also
+  deserve the attention of maintainers.
 
 - *Can I use pre-release or build metadata (e.g. =1.2.3-beta=)?* :: IntVer
   does not specify pre-release or build metadata conventions. You are
