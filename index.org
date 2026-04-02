@@ -36,9 +36,9 @@ If you want to be explicit, define your audiences in your =README=:
 #+begin_example
 This project uses Intentional Versioning (intver.org):
 
-- u: teachers and students (users)
-- i: LMS plugin developers (integrators)
-- m: core contributors (maintainers)
+- Users: teachers and students
+- Integrators: LMS plugin developers
+- Maintainers: maintainers and core contributors
 
 Badge for README.md:
 [![versioning: intver.org](https://img.shields.io/badge/versioning-intver.org-blue.svg)](https://intver.org)
