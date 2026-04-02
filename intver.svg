@@ -2,7 +2,7 @@
 
   <!-- Version number -->
   <text x="310" y="105" text-anchor="middle" font-size="72" font-weight="bold" fill="#222">
-    <tspan fill="#e63946">x</tspan><tspan fill="#888">.</tspan><tspan fill="#457b9d">y</tspan><tspan fill="#888">.</tspan><tspan fill="#2a9d8f">z</tspan>
+    <tspan fill="#e63946">u</tspan><tspan fill="#888">.</tspan><tspan fill="#457b9d">i</tspan><tspan fill="#888">.</tspan><tspan fill="#2a9d8f">m</tspan>
   </text>
 
   <!-- Lines -->
