@@ -1,4 +1,4 @@
-#+title: Intentional Versioning 1.0.0
+#+title: Intentional Versioning 2.0.0
 #+subtitle: IntVer ([[https://codeberg.org/bzg/intver][repo]]) — [[https://bzg.fr][bzg]] — [[https://creativecommons.org/publicdomain/zero/1.0/][CC0 1.0]]
 
 #+attr_html: :style text-align:center
@@ -60,15 +60,15 @@ feat!: Redesign the dashboard
 
 New layout with improved accessibility.
 
-Breaks-Users: The settings page has moved to the profile menu.
-Breaks-Integrators: DashboardConfig.load() now returns a Result type.
+Breaking-Users: The settings page has moved to the profile menu.
+Breaking-Integrators: DashboardConfig.load() now returns a Result type.
 #+end_example
 
 Three trailers are available, one per audience:
 
-- =Breaks-Users:=
-- =Breaks-Integrators:=
-- =Breaks-Maintainers:=
+- =Breaking-Users:=
+- =Breaking-Integrators:=
+- =Breaking-Maintainers:=
 
 The absence of a trailer means that nothing breaks.
 
