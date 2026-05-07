@@ -9,12 +9,12 @@
 Intentional Versioning uses versions to tell *who* should care about a
 release. Version =u.i.m= addresses three audiences:
 
-- =u= — *Users* :: The people who use the software. Incrementing =u= says:
+- =u= - *Users* :: The people who use the software. Incrementing =u= says:
   /"Users, this release is for you."/
-- =i= — *Integrators* :: The people who build on top of the software: API
+- =i= - *Integrators* :: The people who build on top of the software: API
   consumers, plugin authors, packagers. Incrementing =i= says:
   /"Integrators, this release is for you."/
-- =m= — *Maintainers* :: The people who work on the software itself.
+- =m= - *Maintainers* :: The people who work on the software itself.
   Incrementing =m= says: /"Maintainers, this release is for you."/
 
 * Rules
@@ -27,8 +27,8 @@ release. Version =u.i.m= addresses three audiences:
 
 * Audiences
 
-The default audiences – users, integrators, maintainers – fit most
-projects. If yours doesn't have distinct integrators, the =i= won't
+The default audiences (users, integrators, maintainers) fit most
+projects. If yours doesn't have distinct integrators, the "=i"= won't
 change much, and that's fine.
 
 If you want to be explicit, define your audiences in your =README=:
