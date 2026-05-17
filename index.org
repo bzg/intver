@@ -1,4 +1,4 @@
-#+title: Intentional Versioning 2.0.0
+#+title: Intentional Versioning
 #+subtitle: IntVer ([[https://codeberg.org/bzg/intver][repo]]) — [[https://bzg.fr][bzg]] — [[https://creativecommons.org/publicdomain/zero/1.0/][CC0 1.0]]
 
 #+attr_html: :style text-align:center
